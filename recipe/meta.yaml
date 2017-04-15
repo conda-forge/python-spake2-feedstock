@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ url+name }}-{{ version }}.tar.gz
+  fn: {{ url_name }}-{{ version }}.tar.gz
   url: https://github.com/warner/{{ url_name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
