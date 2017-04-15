@@ -1,4 +1,5 @@
-{% set name = "python-spake2" %}
+{% set url_name = "python-spake2" %}
+{% set name = "spake2" %}
 {% set version = "0.7" %}
 {% set sha256 = "1eea1c4627233d0a7a5299019a5d7bdc0aeabc0f765dd843ecbef20a71262536" %}
 
@@ -7,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/warner/{{ name }}/archive/v{{ version }}.tar.gz
+  fn: {{ url+name }}-{{ version }}.tar.gz
+  url: https://github.com/warner/{{ url_name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
