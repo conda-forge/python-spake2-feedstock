@@ -25,12 +25,6 @@ requirements:
     - hkdf
 
 test:
-  source_files:
-    - src/spake2/
-  requires:
-    - pytest
-  commands:
-    - py.test
   imports:
     - spake2
 
