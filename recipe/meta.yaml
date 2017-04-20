@@ -31,6 +31,8 @@ test:
     - pytest
   commands:
     - py.test
+  imports:
+    - spake2
 
 about:
   home: https://github.com/warner/python-spake2
