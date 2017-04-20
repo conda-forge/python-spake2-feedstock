@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -33,7 +33,7 @@ test:
     - py.test
 
 about:
-  home: hhttps://github.com/warner/python-spake2
+  home: https://github.com/warner/python-spake2
   license: MIT
   license_family: MIT
   license_file: LICENSE
