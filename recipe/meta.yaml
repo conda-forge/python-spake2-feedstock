@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -25,15 +25,11 @@ requirements:
     - hkdf
 
 test:
-  source_files:
-    - src/spake2/
-  requires:
-    - pytest
-  commands:
-    - py.test
+  imports:
+    - spake2
 
 about:
-  home: hhttps://github.com/warner/python-spake2
+  home: https://github.com/warner/python-spake2
   license: MIT
   license_family: MIT
   license_file: LICENSE
