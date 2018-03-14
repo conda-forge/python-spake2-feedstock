@@ -1,7 +1,7 @@
 {% set url_name = "python-spake2" %}
 {% set name = "spake2" %}
-{% set version = "0.7" %}
-{% set sha256 = "1eea1c4627233d0a7a5299019a5d7bdc0aeabc0f765dd843ecbef20a71262536" %}
+{% set version = "0.8" %}
+{% set sha256 = "c96c1d9438ca7f738959690b0860473b5bf8f8b95884f78fd5af11d2e6db662f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
