@@ -1,7 +1,7 @@
-About python-spake2
-===================
+About spake2
+============
 
-Home: hhttps://github.com/warner/python-spake2
+Home: https://github.com/warner/python-spake2
 
 Package license: MIT
 
@@ -21,28 +21,28 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-f
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-spake2/badges/version.svg)](https://anaconda.org/conda-forge/python-spake2)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-spake2/badges/downloads.svg)](https://anaconda.org/conda-forge/python-spake2)
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/spake2/badges/version.svg)](https://anaconda.org/conda-forge/spake2)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/spake2/badges/downloads.svg)](https://anaconda.org/conda-forge/spake2)
 
-Installing python-spake2
-========================
+Installing spake2
+=================
 
-Installing `python-spake2` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `spake2` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `python-spake2` can be installed with:
+Once the `conda-forge` channel has been enabled, `spake2` can be installed with:
 
 ```
-conda install python-spake2
+conda install spake2
 ```
 
-It is possible to list all of the versions of `python-spake2` available on your platform with:
+It is possible to list all of the versions of `spake2` available on your platform with:
 
 ```
-conda search python-spake2 --channel conda-forge
+conda search spake2 --channel conda-forge
 ```
 
 
@@ -67,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -81,17 +82,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating python-spake2-feedstock
-================================
+Updating spake2-feedstock
+=========================
 
-If you would like to improve the python-spake2 recipe or build a new
+If you would like to improve the spake2 recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/python-spake2-feedstock are
+Note that all branches in the conda-forge/spake2-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
