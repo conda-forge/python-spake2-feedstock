@@ -13,15 +13,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2 
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 3 
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
-  build:
+  host:
     - python
     - pip 
   run:
+    - python
     - hkdf
 
 test:
