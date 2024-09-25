@@ -1,7 +1,7 @@
 {% set url_name = "python-spake2" %}
 {% set name = "spake2" %}
-{% set version = "0.8" %}
-{% set sha256 = "c96c1d9438ca7f738959690b0860473b5bf8f8b95884f78fd5af11d2e6db662f" %}
+{% set version = "0.9" %}
+{% set sha256 = "38de458c4d1669efb13abc9f7bd70e3077c6bccfcc43b16928433dba62d67efe" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3 
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
   host:
     - python
-    - pip 
+    - pip
   run:
     - python
     - hkdf
