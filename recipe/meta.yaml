@@ -13,19 +13,21 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3 
+  number: 4
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip 
   run:
-    - python
+    - python >={{ python_min }}
     - hkdf
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - spake2
 
