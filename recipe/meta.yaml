@@ -16,14 +16,18 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - pip 
+    - pip
   run:
     - python >={{ python_min }}
     - hkdf
+    - cryptography
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
+  commands:
+    - pip check
   imports:
     - spake2
 
