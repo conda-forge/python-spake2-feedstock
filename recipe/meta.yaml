@@ -1,31 +1,33 @@
-{% set url_name = "python-spake2" %}
-{% set name = "spake2" %}
-{% set version = "0.8" %}
-{% set sha256 = "c96c1d9438ca7f738959690b0860473b5bf8f8b95884f78fd5af11d2e6db662f" %}
+{% set version = "0.9" %}
 
 package:
-  name: {{ name|lower }}
+  name: spake2
   version: {{ version }}
 
 source:
-  fn: {{ url_name }}-{{ version }}.tar.gz
-  url: https://github.com/warner/{{ url_name }}/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/warner/python-spake2/archive/v{{ version }}.tar.gz
+  sha256: 38de458c4d1669efb13abc9f7bd70e3077c6bccfcc43b16928433dba62d67efe
 
 build:
-  number: 3 
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
   host:
-    - python
-    - pip 
+    - python {{ python_min }}
+    - pip
   run:
-    - python
+    - python >={{ python_min }}
     - hkdf
+    - cryptography
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
+  commands:
+    - pip check
   imports:
     - spake2
 
@@ -44,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - CJ-Wright
+    - hmaarrfk
